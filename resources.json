@@ -1,0 +1,38 @@
+{
+    "version": "0.1.0",
+    "app": [
+        {
+            "pattern": "discord",
+            "regex": false,
+            "image": "https://github.com/rpcfetch/resources/blob/main/assets/app/discord.png"
+        },
+        {
+            "pattern": "Code( - [a-zA-Z]+)?",
+            "regex": true,
+            "icase": false,
+            "image": "https://github.com/rpcfetch/resources/blob/main/assets/app/vscode.png"
+        },
+        {
+            "pattern": "firefox",
+            "image": "https://github.com/rpcfetch/resources/blob/main/assets/app/firefox.png"
+        },
+        {
+            "pattern": "Gimp",
+            "image": "https://github.com/rpcfetch/resources/blob/main/assets/app/gimp.png"
+        }
+    ],
+    "os": [
+        {
+            "pattern": "^Arch( Linux)?$",
+            "regex": true,
+            "image": "https://github.com/rpcfetch/resources/blob/main/assets/os/archlinux.png"
+        }
+    ],
+    "wm": [
+        {
+            "pattern": "dwm",
+            "regex": false,
+            "image": "https://github.com/rpcfetch/resources/blob/main/assets/wm/dwm.png"
+        }
+    ]
+}
