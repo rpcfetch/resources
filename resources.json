@@ -4,35 +4,35 @@
         {
             "pattern": "discord",
             "regex": false,
-            "image": "https://github.com/rpcfetch/resources/blob/main/assets/app/discord.png"
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/discord.png"
         },
         {
-            "pattern": "Code( - [a-zA-Z]+)?",
+            "pattern": "^Code( - [a-zA-Z]+)?$",
             "regex": true,
             "icase": false,
-            "image": "https://github.com/rpcfetch/resources/blob/main/assets/app/vscode.png"
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/vscode.png"
         },
         {
             "pattern": "firefox",
-            "image": "https://github.com/rpcfetch/resources/blob/main/assets/app/firefox.png"
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/firefox.png"
         },
         {
             "pattern": "Gimp",
-            "image": "https://github.com/rpcfetch/resources/blob/main/assets/app/gimp.png"
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/gimp.png"
         }
     ],
     "os": [
         {
             "pattern": "^Arch( Linux)?$",
             "regex": true,
-            "image": "https://github.com/rpcfetch/resources/blob/main/assets/os/archlinux.png"
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/os/archlinux.png"
         }
     ],
     "wm": [
         {
             "pattern": "dwm",
             "regex": false,
-            "image": "https://github.com/rpcfetch/resources/blob/main/assets/wm/dwm.png"
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/wm/dwm.png"
         }
     ]
 }

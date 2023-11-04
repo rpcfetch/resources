@@ -44,7 +44,7 @@ Name must match `dwm`:
 ```json
 {
   "pattern": "dwm",
-  "image": "https://github.com/rpcfetch/resources/blob/main/assets/wm/dwm.png"
+  "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/wm/dwm.png"
 }
 ```
 
@@ -53,7 +53,7 @@ Name must match `firefox` but the case can be ignored:
 {
   "pattern": "firefox",
   "icase": true,
-  "image": "https://github.com/rpcfetch/resources/blob/main/assets/app/firefox.png"
+  "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/firefox.png"
 }
 ```
 
@@ -62,7 +62,7 @@ Name must match the regex `^Arch( Linux)?$`:
 {
   "pattern": "^Arch( Linux)?$",
   "regex": true,
-  "image": "https://github.com/rpcfetch/resources/blob/main/assets/os/archlinux.png"
+  "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/os/archlinux.png"
 }
 ```
 
@@ -85,5 +85,5 @@ Feel free to submit pull requests with your desired additions or changes to help
 Please refrain from using "sketchy" websites as image URLs and upload them directly to the repo! Please upload your images to the [appropriate folders](#repository-structure).
 ```diff
 - https://cdn0.iconfinder.com/data/icons/flat-round-system/512/archlinux-512.png
-+ https://github.com/rpcfetch/resources/blob/main/assets/app/firefox.png
++ https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/firefox.png
 ```
