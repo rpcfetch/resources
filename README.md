@@ -10,9 +10,11 @@ This use this in your own projects, you'll need to get the [resources.json](./re
 
 To download the latest release programmatically, use the GitHub releases API: `https://api.github.com/repos/rpcfetch/resources/releases/latest` (docs: https://docs.github.com/en/rest/releases/releases#get-the-latest-release)
 
-### resources.json structure
+If you want to add or request new icons, see [#contributing](#contributing).
 
-The JSON file consists of:
+### File structure
+
+[resources.json](./resources.json) consists of:
 1. The current version ([semver](https://semver.org/))
 2. Categories:
    - app
@@ -80,10 +82,8 @@ Contact the public email of this GitHub organization to request the removal of i
 
 ## Contributing
 
-Feel free to submit pull requests with your desired additions or changes to help this project support the applications you use.
+If you want to request icons, open an issue with the names you want.
 
-Please refrain from using "sketchy" websites as image URLs and upload them directly to the repo! Please upload your images to the [appropriate folders](#repository-structure).
-```diff
-- https://cdn0.iconfinder.com/data/icons/flat-round-system/512/archlinux-512.png
-+ https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/firefox.png
-```
+Feel free to submit pull requests with your desired additions or changes to help this project support the applications you use. If you want to add images to this repository, please make sure that they are compatible with [the limitations of Discord](#discord-limitations).
+
+Do not use "unofficial" application icons. 
