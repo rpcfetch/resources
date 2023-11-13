@@ -26,6 +26,11 @@
             "pattern": "^Arch( Linux)?$",
             "regex": true,
             "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/os/archlinux.png"
+        },
+        {
+            "pattern": "NixOS",
+            "regex": false,
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/os/nixos.png"
         }
     ],
     "wm": [
@@ -33,6 +38,11 @@
             "pattern": "dwm",
             "regex": false,
             "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/wm/dwm.png"
+        },
+        {
+            "pattern": "Hyprland",
+            "regex": true,
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/wm/hyprland.png"
         }
     ]
 }
