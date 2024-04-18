@@ -21,8 +21,8 @@ jobs:
             echo "Checking $img"
             WIDTH=$(identify -format '%w' "$img")
             HEIGHT=$(identify -format '%h' "$img")
-            [[ $WIDTH -lt 512 ]] && echo "$img width is smaller than 512px" && ERRORS=true
-            [[ $HEIGHT -lt 512 ]] && echo "$img height is smaller than 512px" && ERRORS=true
-            [[ $WIDTH -eq $HEIGHT ]] || echo "$img is not square" && ERRORS=true
+            if [ $WIDTH -lt 512 ]; then echo "$img width is smaller than 512px"; ERRORS=true; fi
+            if [ $HEIGHT -lt 512 ]; then echo "$img height is smaller than 512px"; ERRORS=true; fi
+            if [ $WIDTH != $HEIGHT ]; then echo "$img is not square"; ERRORS=true; fi;
           done
-          [[ -z ERRORS ]] && exit 1
+          if [ $ERRORS ]; then exit 1; fi
