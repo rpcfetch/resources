@@ -2,23 +2,71 @@
     "version": "0.1.0",
     "app": [
         {
+            "pattern": "7DaysToDie.x86_64",
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/7daystodie.png"
+        },
+        {
+            "pattern": "Chromium",
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/chromium.png"
+        },
+        {
             "pattern": "discord",
             "regex": false,
             "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/discord.png"
         },
         {
-            "pattern": "^Code( - [a-zA-Z]+)?$",
-            "regex": true,
-            "icase": false,
-            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/vscode.png"
+            "pattern": "easyeffects",
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/easyeffects.png"
+        },
+        {
+            "pattern": "Element",
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/element.png"
         },
         {
             "pattern": "firefox",
             "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/firefox.png"
         },
         {
+            "pattern": "flameshot",
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/flameshot.png"
+        },
+        {
             "pattern": "Gimp",
             "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/gimp.png"
+        },
+        {
+            "pattern": "mpv",
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/mpv.png"
+        },
+        {
+            "pattern": "qBittorrent",
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/qbittorrent.png"
+        },
+        {
+            "pattern": "St",
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/st.png"
+        },
+        {
+            "pattern": "steam",
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/steam.png"
+        },
+        {
+            "pattern": "supertuxkart",
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/supertuxkart.png"
+        },
+        {
+            "pattern": "Terminator",
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/terminator.png"
+        },
+        {
+            "pattern": "Tor Browser",
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/torbrowser.png"
+        },
+        {
+            "pattern": "^Code( - [a-zA-Z]+)?$",
+            "regex": true,
+            "icase": false,
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/app/vscode.png"
         }
     ],
     "os": [
