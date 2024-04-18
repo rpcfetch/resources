@@ -1,0 +1,28 @@
+name: Image resolution check
+
+on:
+  workflow_dispatch:
+  push:
+  pull_request:
+
+concurrency:
+  group: '${{ github.workflow }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}'
+  cancel-in-progress: true
+
+jobs:
+  check-res:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Check all images for minimum resolution
+        run: |
+          for img in $(find . -name "*.png"); do
+            echo "Checking $img"
+            WIDTH=$(identify -format '%w' "$img")
+            HEIGHT=$(identify -format '%h' "$img")
+            if [ $WIDTH -lt 512 ]; then echo "$img width is smaller than 512px"; ERRORS=true; fi
+            if [ $HEIGHT -lt 512 ]; then echo "$img height is smaller than 512px"; ERRORS=true; fi
+            if [ $WIDTH != $HEIGHT ]; then echo "$img is not square"; ERRORS=true; fi;
+          done
+          if [ $ERRORS ]; then exit 1; fi
