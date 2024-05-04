@@ -21,6 +21,8 @@ jobs:
             echo "Checking $img"
             WIDTH=$(identify -format '%w' "$img")
             HEIGHT=$(identify -format '%h' "$img")
+            FILE_FORMAT=$(identify -format '%m' "$img")
+            if [ $FILE_FORMAT != "PNG" ]; then echo "$img ($FILE_FORMAT) is not PNG"; ERRORS=true; fi
             if [ $WIDTH -lt 512 ]; then echo "$img width is smaller than 512px"; ERRORS=true; fi
             if [ $HEIGHT -lt 512 ]; then echo "$img height is smaller than 512px"; ERRORS=true; fi
             if [ $WIDTH != $HEIGHT ]; then echo "$img is not square"; ERRORS=true; fi;
