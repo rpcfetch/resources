@@ -76,6 +76,11 @@
             "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/os/archlinux.png"
         },
         {
+            "pattern": "^Fedora( Linux)?$",
+            "regex": true,
+            "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/os/fedora.png"
+        },
+        {
             "pattern": "NixOS",
             "regex": false,
             "image": "https://raw.githubusercontent.com/rpcfetch/resources/main/assets/os/nixos.png"
